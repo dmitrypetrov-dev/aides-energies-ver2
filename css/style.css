@@ -416,6 +416,14 @@ input, textarea {
     font-weight: 700;
 }
 
+@media screen and (max-width: 1440px) {
+    .installation::before {
+        height: 113%;
+        top: -22%;
+        background-position: center;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .installation__logos {
         grid-template-columns: repeat(2, minmax(auto, 1fr));
@@ -444,8 +452,7 @@ input, textarea {
     }
 
     .installation::before {
-        background-position: 15% 50%;
-        top: -30%;
+        background-position: 10% 50%;
     }
 
     .installation__wrapper::before {
@@ -472,8 +479,10 @@ input, textarea {
 @media screen and (max-width: 479px) {
 
     .installation__wrapper::before {
+        width: calc(100% + 2.2rem);
         height: 65%;
         top: 13%;
+        left: -1.1rem;
     }
 
     .installation__steps {
@@ -649,6 +658,14 @@ span.--amaranth {
 
 }
 
+@media screen and (max-width: 1440px) {
+
+    .why::before {
+        height: 108%;
+        top: 1.5%;
+    }
+}
+
 @media screen and (max-width: 767px) {
 
     .why {
@@ -657,8 +674,6 @@ span.--amaranth {
     }
 
     .why::before {
-        height: 108%;
-        top: 0;
         background-image: url(../img/why-mb.png);
         background-position: 0 10%;
     }
