@@ -608,7 +608,7 @@ span.--amaranth {
     position: absolute;
     top: -32%;
     left: 0;
-    background: url(../img/why-bg.png) 0 0 no-repeat;
+    background: url(../img/why-bg.png) center no-repeat;
     background-size: cover;
     z-index: -10;
 }
