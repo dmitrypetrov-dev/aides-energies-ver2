@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <title>Aides Energies</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <img src="img/header-logo.png" alt="Header logo" width="278" height="78">
+                </div>
+                <div class="header__text">BÉNÉFICIEZ DES 9 500€ D'AIDES DE L'ÉTAT SUR VOTRE POMPE À CHALEUR</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__left">
+                        <h1 class="hero__title">L'État finance votre <span>Pompe à Chaleur</span> jusqu'à
+                            <span>9 500€</span></h1>
+                        <ul class="hero__list">
+                            <li class="hero__list-item">Installation par des professionnels agréés <span>RGE</span></li>
+                            <li class="hero__list-item">Prime d'État couvrant en moyenne <span>90% du prix d'installation</span>
+                            </li>
+                            <li class="hero__list-item"><span>Accompagnement et expertise</span> tout au long de la
+                                procédure
+                            </li>
+                            <li class="hero__list-item">Gagnez votre <span>indépendance énergétique</span> !</li>
+                        </ul>
+                        <a href="#!" class="cta --amaranth">Remplir Le Formulaire</a>
+                    </div>
+                    <div class="hero__right">
+                        <div class="hero__form">
+                            <h2>CALCULEZ VOTRE PRIME</h2>
+                            <form class="form" action="https://france-habitation.com/fsg?lp-form-submit-method=ajax&pageId=fbc7ed13-ea0b-4dbf-99c0-66dbc5968ffc&variant=t"
+                                  method="POST">
+                                <input type="hidden" name="pageId" value="fbc7ed13-ea0b-4dbf-99c0-66dbc5968ffc">
+                                <input type="hidden" name="pageVariant" value="t">
+                                <div class="form__wrapper">
+                                    <div class="form__field">
+                                        <label for="nom" id="label_nom">Nom *</label>
+                                        <input id="nom" name="nom" type="text" required="">
+                                    </div>
+                                    <div class="form__field">
+                                        <label for="prénom" id="label_prénom">Prénom *</label>
+                                        <input id="prénom" name="prénom" type="text" required="">
+                                    </div>
+                                    <div class="form__field">
+                                        <label for="email" id="label_email">Email *</label>
+                                        <input id="email" name="email" type="email" required=""
+                                               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9_-]+\.[a-zA-Z0-9-.]{2,61}$">
+                                    </div>
+                                    <div class="form__field">
+                                        <label for="téléphone" id="label_téléphone">Téléphone *</label>
+                                        <input id="téléphone" name="téléphone" type="tel" required=""
+                                               pattern="^\+?( ?\(?-?\d\)?){6,13}$">
+                                    </div>
+                                    <div class="form__field">
+                                        <label for="code_postal" id="label_code_postal">Code Postal *</label>
+                                        <input id="code_postal" name="code_postal" type="text" required="">
+                                    </div>
+                                    <div class="form__field">
+                                        <label for="je_suis_" id="label_je_suis_">Je suis :</label>
+                                        <select id="je_suis_" name="je_suis_">
+                                            <option value="Propriétaire">Propriétaire</option>
+                                            <option value="Locataire">Locataire</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__field">
+                                        <label for="type_de_chauffage__" id="label_type_de_chauffage__">Type de
+                                            chauffage :</label>
+                                        <select id="type_de_chauffage__" name="type_de_chauffage__">
+                                            <option value="Fioul">Fioul</option>
+                                            <option value="Gaz">Gaz</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__field">
+                                        <label for="vous_habitez_une__" id="label_vous_habitez_une__">Vous habitez
+                                            un(e) :</label>
+                                        <select id="vous_habitez_une__" name="vous_habitez_une__">
+                                            <option value="Maison">Maison</option>
+                                            <option value="Appartement">Appartement</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__field">
+                                        <label for="vous_facture_annuelle_dénergie_sélève_à_"
+                                               id="label_vous_facture_annuelle_dénergie_sélève_à_">Vous facture annuelle
+                                            d'énergie s'élève à :</label>
+                                        <select id="vous_facture_annuelle_dénergie_sélève_à_"
+                                                name="vous_facture_annuelle_dénergie_sélève_à_">
+                                            <option value="Moins de 1400€">Moins de 1400€</option>
+                                            <option value="Entre 1400€ et 2000€">Entre 1400€ et 2000€</option>
+                                            <option value="Plus de 2000€">Plus de 2000€</option>
+                                        </select>
+                                    </div>
+                                    <input id="key" name="key" type="hidden" value="key">
+                                    <input id="Source" name="Source" type="hidden" value="Display">
+                                </div>
+                                <button class="cta --amaranth form" type="submit">CALCULER MES AIDES</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="installation">
+            <div class="container">
+                <div class="installation__logos">
+                    <img src="img/svg/nosassurances.svg" alt="">
+                    <img src="img/svg/francerenov.svg" alt="">
+                    <img src="img/svg/francerelance.svg" alt="">
+                    <img src="img/svg/republiquefrancaise.svg" alt="">
+                    <img src="img/svg/maprimerenov.svg" alt="">
+                </div>
+                <div class="installation__wrapper">
+                    <h2 class="installation__title section-title">Comment profiter des aides d'état <span>pour l'installation de votre</span>
+                        pompe a chaleur ?</h2>
+                    <div class="installation__steps">
+                        <div class="installation__step">
+                            <div class="installation__step-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_72_292)">
+                                        <path d="M6.92285 -0.166016V34.5801L15.8877 28.2959L21.6763 39.7681L27.3745 36.8262L21.3857 25.7422L32.582 23.269L31.6934 22.4585L6.92285 -0.166016ZM8.17285 2.66602L29.96 22.5684L19.501 24.8755L25.6704 36.2988L22.2231 38.0786L16.354 26.4429L8.17285 32.1777V2.66602ZM10.6729 9.375C10.3286 9.375 10.0479 9.65576 10.0479 10C10.0479 10.3442 10.3286 10.625 10.6729 10.625C11.0171 10.625 11.2979 10.3442 11.2979 10C11.2979 9.65576 11.0171 9.375 10.6729 9.375ZM10.6729 11.875C10.3286 11.875 10.0479 12.1558 10.0479 12.5C10.0479 12.8442 10.3286 13.125 10.6729 13.125C11.0171 13.125 11.2979 12.8442 11.2979 12.5C11.2979 12.1558 11.0171 11.875 10.6729 11.875ZM10.6729 14.375C10.3286 14.375 10.0479 14.6558 10.0479 15C10.0479 15.3442 10.3286 15.625 10.6729 15.625C11.0171 15.625 11.2979 15.3442 11.2979 15C11.2979 14.6558 11.0171 14.375 10.6729 14.375ZM10.6729 16.875C10.3286 16.875 10.0479 17.1558 10.0479 17.5C10.0479 17.8442 10.3286 18.125 10.6729 18.125C11.0171 18.125 11.2979 17.8442 11.2979 17.5C11.2979 17.1558 11.0171 16.875 10.6729 16.875ZM10.6729 19.375C10.3286 19.375 10.0479 19.6558 10.0479 20C10.0479 20.3442 10.3286 20.625 10.6729 20.625C11.0171 20.625 11.2979 20.3442 11.2979 20C11.2979 19.6558 11.0171 19.375 10.6729 19.375ZM10.6729 21.875C10.3286 21.875 10.0479 22.1558 10.0479 22.5C10.0479 22.8442 10.3286 23.125 10.6729 23.125C11.0171 23.125 11.2979 22.8442 11.2979 22.5C11.2979 22.1558 11.0171 21.875 10.6729 21.875ZM10.6729 24.375C10.3286 24.375 10.0479 24.6558 10.0479 25C10.0479 25.3442 10.3286 25.625 10.6729 25.625C11.0171 25.625 11.2979 25.3442 11.2979 25C11.2979 24.6558 11.0171 24.375 10.6729 24.375ZM10.6729 26.875C10.3286 26.875 10.0479 27.1558 10.0479 27.5C10.0479 27.8442 10.3286 28.125 10.6729 28.125C11.0171 28.125 11.2979 27.8442 11.2979 27.5C11.2979 27.1558 11.0171 26.875 10.6729 26.875Z"
+                                              fill="#333333"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_72_292">
+                                            <rect width="40" height="40" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="installation__step-text">
+                                Remplir <span>le formulaire d'éligibilité</span>
+                            </div>
+                        </div>
+                        <div class="installation__step --amaranth">
+                            <div class="installation__step-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_72_298)">
+                                        <path d="M9.50587 2.30769L4.06982 9.25536L1.54075 7.01699L0.319824 8.41234L3.57564 11.3193L4.30238 11.9589L4.91285 11.174L10.9594 3.47048L9.50587 2.30769ZM14.8838 6.61002V8.47048H40.0001V6.61002H14.8838ZM9.50587 15.3309L4.06982 22.2786L1.54075 20.0402L0.319824 21.4356L3.57564 24.3426L4.30238 24.9821L4.91285 24.1972L10.9594 16.4937L9.50587 15.3309ZM14.8838 19.6333V21.4937H40.0001V19.6333H14.8838ZM9.50587 28.3542L4.06982 35.3019L1.54075 33.0635L0.319824 34.4589L3.57564 37.3658L4.30238 38.0054L4.91285 37.2205L10.9594 29.517L9.50587 28.3542ZM14.8838 32.6565V34.517H40.0001V32.6565H14.8838Z"
+                                              fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_72_298">
+                                            <rect width="40" height="40" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="installation__step-text">
+                                Vérification <span>de l'éligibilité</span>
+                            </div>
+                        </div>
+                        <div class="installation__step --black">
+                            <div class="installation__step-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_72_304)">
+                                        <path d="M8.68652 0.0012207C8.11765 0.0177352 7.5776 0.255307 7.18103 0.663503C6.78445 1.0717 6.56258 1.61838 6.5625 2.1875V3.75H0.625C0.45924 3.75 0.300269 3.81585 0.183058 3.93306C0.065848 4.05027 0 4.20924 0 4.375L0 39.375C0 39.5408 0.065848 39.6997 0.183058 39.8169C0.300269 39.9342 0.45924 40 0.625 40H39.375C39.5408 40 39.6997 39.9342 39.8169 39.8169C39.9342 39.6997 40 39.5408 40 39.375V12.5V4.375C40 4.20924 39.9342 4.05027 39.8169 3.93306C39.6997 3.81585 39.5408 3.75 39.375 3.75H33.4375V2.1875C33.4375 1.60734 33.207 1.05094 32.7968 0.640704C32.3866 0.230468 31.8302 0 31.25 0C30.6698 0 30.1134 0.230468 29.7032 0.640704C29.293 1.05094 29.0625 1.60734 29.0625 2.1875V3.75H10.9668C10.9562 3.75 10.9475 3.7561 10.9375 3.7561V2.1875C10.9375 1.89492 10.8787 1.60531 10.7648 1.33583C10.6508 1.06635 10.484 0.822467 10.2741 0.618617C10.0642 0.414767 9.81555 0.255093 9.54287 0.149045C9.27018 0.0429971 8.97898 -0.00726942 8.68652 0.0012207ZM8.77686 1.25C9.02081 1.25699 9.25243 1.35884 9.42247 1.5339C9.59252 1.70897 9.6876 1.94344 9.6875 2.1875V6.5625C9.6875 6.81114 9.58873 7.0496 9.41291 7.22541C9.2371 7.40123 8.99864 7.5 8.75 7.5C8.50136 7.5 8.2629 7.40123 8.08709 7.22541C7.91127 7.0496 7.8125 6.81114 7.8125 6.5625V2.1875C7.81245 2.06209 7.83756 1.93795 7.88634 1.82242C7.93513 1.70689 8.00659 1.60232 8.09651 1.51491C8.18643 1.42749 8.29298 1.35901 8.40984 1.3135C8.5267 1.268 8.6515 1.24641 8.77686 1.25ZM31.2769 1.25C31.5208 1.25699 31.7524 1.35884 31.9225 1.5339C32.0925 1.70897 32.1876 1.94344 32.1875 2.1875V6.5625C32.1875 6.81114 32.0887 7.0496 31.9129 7.22541C31.7371 7.40123 31.4986 7.5 31.25 7.5C31.0014 7.5 30.7629 7.40123 30.5871 7.22541C30.4113 7.0496 30.3125 6.81114 30.3125 6.5625V2.1875C30.3124 2.06209 30.3376 1.93795 30.3863 1.82242C30.4351 1.70689 30.5066 1.60232 30.5965 1.51491C30.6864 1.42749 30.793 1.35901 30.9098 1.3135C31.0267 1.268 31.1515 1.24641 31.2769 1.25ZM10.9375 4.9939C10.9475 4.9939 10.9562 5 10.9668 5H29.0625V6.5625C29.0625 7.14266 29.293 7.69906 29.7032 8.1093C30.1134 8.51953 30.6698 8.75 31.25 8.75C31.8302 8.75 32.3866 8.51953 32.7968 8.1093C33.207 7.69906 33.4375 7.14266 33.4375 6.5625V5H38.75V11.875H9.84863C9.68287 11.875 9.5239 11.9408 9.40669 12.0581C9.28948 12.1753 9.22363 12.3342 9.22363 12.5C9.22363 12.6658 9.28948 12.8247 9.40669 12.9419C9.5239 13.0592 9.68287 13.125 9.84863 13.125H38.75V30H30.625C30.4592 30 30.3003 30.0658 30.1831 30.1831C30.0658 30.3003 30 30.4592 30 30.625V38.75H1.25V13.125H7.5C7.66576 13.125 7.82473 13.0592 7.94194 12.9419C8.05915 12.8247 8.125 12.6658 8.125 12.5C8.125 12.3342 8.05915 12.1753 7.94194 12.0581C7.82473 11.9408 7.66576 11.875 7.5 11.875H1.25V5H6.5625V6.5625C6.5625 7.14266 6.79297 7.69906 7.2032 8.1093C7.61344 8.51953 8.16984 8.75 8.75 8.75C9.33016 8.75 9.88656 8.51953 10.2968 8.1093C10.707 7.69906 10.9375 7.14266 10.9375 6.5625V4.9939ZM9.51416 18.125C9.3484 18.125 9.18943 18.1908 9.07222 18.3081C8.95501 18.4253 8.88916 18.5842 8.88916 18.75V21.875H5.76416C5.5984 21.875 5.43943 21.9408 5.32222 22.0581C5.20501 22.1753 5.13916 22.3342 5.13916 22.5C5.13916 22.6658 5.20501 22.8247 5.32222 22.9419C5.43943 23.0592 5.5984 23.125 5.76416 23.125H9.51416C9.67992 23.125 9.83889 23.0592 9.9561 22.9419C10.0733 22.8247 10.1392 22.6658 10.1392 22.5V18.75C10.1392 18.5842 10.0733 18.4253 9.9561 18.3081C9.83889 18.1908 9.67992 18.125 9.51416 18.125ZM17.7539 18.125C17.5881 18.125 17.4292 18.1908 17.312 18.3081C17.1948 18.4253 17.1289 18.5842 17.1289 18.75V21.875H14.0039C13.8381 21.875 13.6792 21.9408 13.562 22.0581C13.4448 22.1753 13.3789 22.3342 13.3789 22.5C13.3789 22.6658 13.4448 22.8247 13.562 22.9419C13.6792 23.0592 13.8381 23.125 14.0039 23.125H17.7539C17.9197 23.125 18.0786 23.0592 18.1958 22.9419C18.3131 22.8247 18.3789 22.6658 18.3789 22.5V18.75C18.3789 18.5842 18.3131 18.4253 18.1958 18.3081C18.0786 18.1908 17.9197 18.125 17.7539 18.125ZM25.9961 18.125C25.8303 18.125 25.6714 18.1908 25.5542 18.3081C25.4369 18.4253 25.3711 18.5842 25.3711 18.75V21.875H22.2461C22.0803 21.875 21.9214 21.9408 21.8042 22.0581C21.6869 22.1753 21.6211 22.3342 21.6211 22.5C21.6211 22.6658 21.6869 22.8247 21.8042 22.9419C21.9214 23.0592 22.0803 23.125 22.2461 23.125H25.9961C26.1619 23.125 26.3208 23.0592 26.438 22.9419C26.5552 22.8247 26.6211 22.6658 26.6211 22.5V18.75C26.6211 18.5842 26.5552 18.4253 26.438 18.3081C26.3208 18.1908 26.1619 18.125 25.9961 18.125ZM34.2175 18.125C34.055 18.1298 33.9007 18.1977 33.7874 18.3144C33.6741 18.4311 33.6108 18.5874 33.6108 18.75V21.875H30.4858C30.3201 21.875 30.1611 21.9408 30.0439 22.0581C29.9267 22.1753 29.8608 22.3342 29.8608 22.5C29.8608 22.6658 29.9267 22.8247 30.0439 22.9419C30.1611 23.0592 30.3201 23.125 30.4858 23.125H34.2358C34.4016 23.125 34.5606 23.0592 34.6778 22.9419C34.795 22.8247 34.8608 22.6658 34.8608 22.5V18.75C34.8609 18.6664 34.8441 18.5836 34.8116 18.5065C34.779 18.4295 34.7313 18.3597 34.6714 18.3015C34.6114 18.2432 34.5403 18.1975 34.4623 18.1672C34.3844 18.1369 34.3011 18.1225 34.2175 18.125ZM9.51416 28.125C9.3484 28.125 9.18943 28.1908 9.07222 28.3081C8.95501 28.4253 8.88916 28.5842 8.88916 28.75V31.875H5.76416C5.5984 31.875 5.43943 31.9408 5.32222 32.0581C5.20501 32.1753 5.13916 32.3342 5.13916 32.5C5.13916 32.6658 5.20501 32.8247 5.32222 32.9419C5.43943 33.0592 5.5984 33.125 5.76416 33.125H9.51416C9.67992 33.125 9.83889 33.0592 9.9561 32.9419C10.0733 32.8247 10.1392 32.6658 10.1392 32.5V28.75C10.1392 28.5842 10.0733 28.4253 9.9561 28.3081C9.83889 28.1908 9.67992 28.125 9.51416 28.125ZM17.7539 28.125C17.5881 28.125 17.4292 28.1908 17.312 28.3081C17.1948 28.4253 17.1289 28.5842 17.1289 28.75V31.875H14.0039C13.8381 31.875 13.6792 31.9408 13.562 32.0581C13.4448 32.1753 13.3789 32.3342 13.3789 32.5C13.3789 32.6658 13.4448 32.8247 13.562 32.9419C13.6792 33.0592 13.8381 33.125 14.0039 33.125H17.7539C17.9197 33.125 18.0786 33.0592 18.1958 32.9419C18.3131 32.8247 18.3789 32.6658 18.3789 32.5V28.75C18.3789 28.5842 18.3131 28.4253 18.1958 28.3081C18.0786 28.1908 17.9197 28.125 17.7539 28.125ZM25.9961 28.125C25.8303 28.125 25.6714 28.1908 25.5542 28.3081C25.4369 28.4253 25.3711 28.5842 25.3711 28.75V31.875H22.2461C22.0803 31.875 21.9214 31.9408 21.8042 32.0581C21.6869 32.1753 21.6211 32.3342 21.6211 32.5C21.6211 32.6658 21.6869 32.8247 21.8042 32.9419C21.9214 33.0592 22.0803 33.125 22.2461 33.125H25.9961C26.1619 33.125 26.3208 33.0592 26.438 32.9419C26.5552 32.8247 26.6211 32.6658 26.6211 32.5V28.75C26.6211 28.5842 26.5552 28.4253 26.438 28.3081C26.3208 28.1908 26.1619 28.125 25.9961 28.125ZM31.25 31.25H37.8662L32.2241 36.8909C32.1647 36.9486 32.1173 37.0175 32.0848 37.0937C32.0522 37.1699 32.0352 37.2518 32.0346 37.3347C32.034 37.4175 32.0498 37.4996 32.0812 37.5763C32.1127 37.653 32.159 37.7226 32.2176 37.7812C32.2762 37.8398 32.3458 37.8861 32.4225 37.9175C32.4991 37.949 32.5813 37.9648 32.6641 37.9642C32.747 37.9636 32.8289 37.9465 32.905 37.914C32.9812 37.8815 33.0502 37.8341 33.1079 37.7747L38.75 32.1338V38.75H31.25V31.25Z"
+                                              fill="white"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_72_304">
+                                            <rect width="40" height="40" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="installation__step-text">
+                                Prise de rendez-vous <span>pour l'installation</span>
+                            </div>
+                        </div>
+                        <div class="installation__step">
+                            <div class="installation__step-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.125 1.53846C1.40625 1.53846 0 2.94471 0 4.66346V7.16346C0 7.94959 0.559082 8.50135 1.25 8.77723V19.0385C1.25 20.7572 2.65625 22.1635 4.375 22.1635H35.625C37.3438 22.1635 38.75 20.7572 38.75 19.0385V8.77723C39.4409 8.50135 40 7.94959 40 7.16346V4.66346C40 2.94471 38.5938 1.53846 36.875 1.53846H3.125ZM3.125 2.78846H36.875C37.9175 2.78846 38.75 3.62098 38.75 4.66346V7.16346C38.75 7.51746 38.479 7.78846 38.125 7.78846H37.5C37.1558 7.78846 36.875 8.06922 36.875 8.41346C36.875 8.7577 37.1558 9.03846 37.5 9.03846V19.0385C37.5 20.0809 36.6675 20.9135 35.625 20.9135H35V20.2885C35 18.5697 33.5938 17.1635 31.875 17.1635H8.125C6.40625 17.1635 5 18.5697 5 20.2885V20.9135H4.375C3.33252 20.9135 2.5 20.0809 2.5 19.0385V9.03846C2.84424 9.03846 3.125 8.7577 3.125 8.41346C3.125 8.06922 2.84424 7.78846 2.5 7.78846H1.875C1.521 7.78846 1.25 7.51746 1.25 7.16346V4.66346C1.25 3.62098 2.08252 2.78846 3.125 2.78846ZM5 7.78846C4.65576 7.78846 4.375 8.06922 4.375 8.41346C4.375 8.7577 4.65576 9.03846 5 9.03846C5.34424 9.03846 5.625 8.7577 5.625 8.41346C5.625 8.06922 5.34424 7.78846 5 7.78846ZM7.5 7.78846C7.15576 7.78846 6.875 8.06922 6.875 8.41346C6.875 8.7577 7.15576 9.03846 7.5 9.03846C7.84424 9.03846 8.125 8.7577 8.125 8.41346C8.125 8.06922 7.84424 7.78846 7.5 7.78846ZM10 7.78846C9.65576 7.78846 9.375 8.06922 9.375 8.41346C9.375 8.7577 9.65576 9.03846 10 9.03846C10.3442 9.03846 10.625 8.7577 10.625 8.41346C10.625 8.06922 10.3442 7.78846 10 7.78846ZM12.5 7.78846C12.1558 7.78846 11.875 8.06922 11.875 8.41346C11.875 8.7577 12.1558 9.03846 12.5 9.03846C12.8442 9.03846 13.125 8.7577 13.125 8.41346C13.125 8.06922 12.8442 7.78846 12.5 7.78846ZM15 7.78846C14.6558 7.78846 14.375 8.06922 14.375 8.41346C14.375 8.7577 14.6558 9.03846 15 9.03846C15.3442 9.03846 15.625 8.7577 15.625 8.41346C15.625 8.06922 15.3442 7.78846 15 7.78846ZM17.5 7.78846C17.1558 7.78846 16.875 8.06922 16.875 8.41346C16.875 8.7577 17.1558 9.03846 17.5 9.03846C17.8442 9.03846 18.125 8.7577 18.125 8.41346C18.125 8.06922 17.8442 7.78846 17.5 7.78846ZM20 7.78846C19.6558 7.78846 19.375 8.06922 19.375 8.41346C19.375 8.7577 19.6558 9.03846 20 9.03846C20.3442 9.03846 20.625 8.7577 20.625 8.41346C20.625 8.06922 20.3442 7.78846 20 7.78846ZM22.5 7.78846C22.1558 7.78846 21.875 8.06922 21.875 8.41346C21.875 8.7577 22.1558 9.03846 22.5 9.03846C22.8442 9.03846 23.125 8.7577 23.125 8.41346C23.125 8.06922 22.8442 7.78846 22.5 7.78846ZM25 7.78846C24.6558 7.78846 24.375 8.06922 24.375 8.41346C24.375 8.7577 24.6558 9.03846 25 9.03846C25.3442 9.03846 25.625 8.7577 25.625 8.41346C25.625 8.06922 25.3442 7.78846 25 7.78846ZM27.5 7.78846C27.1558 7.78846 26.875 8.06922 26.875 8.41346C26.875 8.7577 27.1558 9.03846 27.5 9.03846C27.8442 9.03846 28.125 8.7577 28.125 8.41346C28.125 8.06922 27.8442 7.78846 27.5 7.78846ZM30 7.78846C29.6558 7.78846 29.375 8.06922 29.375 8.41346C29.375 8.7577 29.6558 9.03846 30 9.03846C30.3442 9.03846 30.625 8.7577 30.625 8.41346C30.625 8.06922 30.3442 7.78846 30 7.78846ZM32.5 7.78846C32.1558 7.78846 31.875 8.06922 31.875 8.41346C31.875 8.7577 32.1558 9.03846 32.5 9.03846C32.8442 9.03846 33.125 8.7577 33.125 8.41346C33.125 8.06922 32.8442 7.78846 32.5 7.78846ZM35 7.78846C34.6558 7.78846 34.375 8.06922 34.375 8.41346C34.375 8.7577 34.6558 9.03846 35 9.03846C35.3442 9.03846 35.625 8.7577 35.625 8.41346C35.625 8.06922 35.3442 7.78846 35 7.78846ZM16.25 14.0385C15.9058 14.0385 15.625 14.3192 15.625 14.6635C15.625 15.0077 15.9058 15.2885 16.25 15.2885C16.5942 15.2885 16.875 15.0077 16.875 14.6635C16.875 14.3192 16.5942 14.0385 16.25 14.0385ZM18.75 14.0385C18.5254 14.036 18.3154 14.1532 18.2007 14.3485C18.0884 14.5438 18.0884 14.7831 18.2007 14.9784C18.3154 15.1737 18.5254 15.2909 18.75 15.2885H21.25C21.4746 15.2909 21.6846 15.1737 21.7993 14.9784C21.9116 14.7831 21.9116 14.5438 21.7993 14.3485C21.6846 14.1532 21.4746 14.036 21.25 14.0385H18.75ZM23.75 14.0385C23.4058 14.0385 23.125 14.3192 23.125 14.6635C23.125 15.0077 23.4058 15.2885 23.75 15.2885C24.0942 15.2885 24.375 15.0077 24.375 14.6635C24.375 14.3192 24.0942 14.0385 23.75 14.0385ZM8.125 18.4135H31.875C32.9175 18.4135 33.75 19.246 33.75 20.2885V20.9135H6.25V20.2885C6.25 19.246 7.08252 18.4135 8.125 18.4135ZM8.75 24.6635C8.40576 24.6635 8.125 24.9442 8.125 25.2885C8.125 25.6327 8.40576 25.9135 8.75 25.9135C9.09424 25.9135 9.375 25.6327 9.375 25.2885C9.375 24.9442 9.09424 24.6635 8.75 24.6635ZM14.375 24.6635C14.0308 24.6635 13.75 24.9442 13.75 25.2885C13.75 25.6327 14.0308 25.9135 14.375 25.9135C14.7192 25.9135 15 25.6327 15 25.2885C15 24.9442 14.7192 24.6635 14.375 24.6635ZM20 24.6635C19.6558 24.6635 19.375 24.9442 19.375 25.2885C19.375 25.6327 19.6558 25.9135 20 25.9135C20.3442 25.9135 20.625 25.6327 20.625 25.2885C20.625 24.9442 20.3442 24.6635 20 24.6635ZM25.625 24.6635C25.2808 24.6635 25 24.9442 25 25.2885C25 25.6327 25.2808 25.9135 25.625 25.9135C25.9692 25.9135 26.25 25.6327 26.25 25.2885C26.25 24.9442 25.9692 24.6635 25.625 24.6635ZM31.25 24.6635C30.9058 24.6635 30.625 24.9442 30.625 25.2885C30.625 25.6327 30.9058 25.9135 31.25 25.9135C31.5942 25.9135 31.875 25.6327 31.875 25.2885C31.875 24.9442 31.5942 24.6635 31.25 24.6635ZM7.5 27.1635C7.15576 27.1635 6.875 27.4442 6.875 27.7885C6.875 28.1327 7.15576 28.4135 7.5 28.4135C7.84424 28.4135 8.125 28.1327 8.125 27.7885C8.125 27.4442 7.84424 27.1635 7.5 27.1635ZM13.75 27.1635C13.4058 27.1635 13.125 27.4442 13.125 27.7885C13.125 28.1327 13.4058 28.4135 13.75 28.4135C14.0942 28.4135 14.375 28.1327 14.375 27.7885C14.375 27.4442 14.0942 27.1635 13.75 27.1635ZM20 27.1635C19.6558 27.1635 19.375 27.4442 19.375 27.7885C19.375 28.1327 19.6558 28.4135 20 28.4135C20.3442 28.4135 20.625 28.1327 20.625 27.7885C20.625 27.4442 20.3442 27.1635 20 27.1635ZM26.25 27.1635C25.9058 27.1635 25.625 27.4442 25.625 27.7885C25.625 28.1327 25.9058 28.4135 26.25 28.4135C26.5942 28.4135 26.875 28.1327 26.875 27.7885C26.875 27.4442 26.5942 27.1635 26.25 27.1635ZM32.5 27.1635C32.1558 27.1635 31.875 27.4442 31.875 27.7885C31.875 28.1327 32.1558 28.4135 32.5 28.4135C32.8442 28.4135 33.125 28.1327 33.125 27.7885C33.125 27.4442 32.8442 27.1635 32.5 27.1635ZM6.25 29.6635C5.90576 29.6635 5.625 29.9442 5.625 30.2885C5.625 30.6327 5.90576 30.9135 6.25 30.9135C6.59424 30.9135 6.875 30.6327 6.875 30.2885C6.875 29.9442 6.59424 29.6635 6.25 29.6635ZM13.125 29.6635C12.7808 29.6635 12.5 29.9442 12.5 30.2885C12.5 30.6327 12.7808 30.9135 13.125 30.9135C13.4692 30.9135 13.75 30.6327 13.75 30.2885C13.75 29.9442 13.4692 29.6635 13.125 29.6635ZM20 29.6635C19.6558 29.6635 19.375 29.9442 19.375 30.2885C19.375 30.6327 19.6558 30.9135 20 30.9135C20.3442 30.9135 20.625 30.6327 20.625 30.2885C20.625 29.9442 20.3442 29.6635 20 29.6635ZM26.875 29.6635C26.5308 29.6635 26.25 29.9442 26.25 30.2885C26.25 30.6327 26.5308 30.9135 26.875 30.9135C27.2192 30.9135 27.5 30.6327 27.5 30.2885C27.5 29.9442 27.2192 29.6635 26.875 29.6635ZM33.75 29.6635C33.4058 29.6635 33.125 29.9442 33.125 30.2885C33.125 30.6327 33.4058 30.9135 33.75 30.9135C34.0942 30.9135 34.375 30.6327 34.375 30.2885C34.375 29.9442 34.0942 29.6635 33.75 29.6635ZM5 32.1635C4.65576 32.1635 4.375 32.4442 4.375 32.7885C4.375 33.1327 4.65576 33.4135 5 33.4135C5.34424 33.4135 5.625 33.1327 5.625 32.7885C5.625 32.4442 5.34424 32.1635 5 32.1635ZM12.5 32.1635C12.1558 32.1635 11.875 32.4442 11.875 32.7885C11.875 33.1327 12.1558 33.4135 12.5 33.4135C12.8442 33.4135 13.125 33.1327 13.125 32.7885C13.125 32.4442 12.8442 32.1635 12.5 32.1635ZM20 32.1635C19.6558 32.1635 19.375 32.4442 19.375 32.7885C19.375 33.1327 19.6558 33.4135 20 33.4135C20.3442 33.4135 20.625 33.1327 20.625 32.7885C20.625 32.4442 20.3442 32.1635 20 32.1635ZM27.5 32.1635C27.1558 32.1635 26.875 32.4442 26.875 32.7885C26.875 33.1327 27.1558 33.4135 27.5 33.4135C27.8442 33.4135 28.125 33.1327 28.125 32.7885C28.125 32.4442 27.8442 32.1635 27.5 32.1635ZM35 32.1635C34.6558 32.1635 34.375 32.4442 34.375 32.7885C34.375 33.1327 34.6558 33.4135 35 33.4135C35.3442 33.4135 35.625 33.1327 35.625 32.7885C35.625 32.4442 35.3442 32.1635 35 32.1635ZM11.875 34.6635C11.5308 34.6635 11.25 34.9442 11.25 35.2885C11.25 35.6327 11.5308 35.9135 11.875 35.9135C12.2192 35.9135 12.5 35.6327 12.5 35.2885C12.5 34.9442 12.2192 34.6635 11.875 34.6635ZM20 34.6635C19.6558 34.6635 19.375 34.9442 19.375 35.2885C19.375 35.6327 19.6558 35.9135 20 35.9135C20.3442 35.9135 20.625 35.6327 20.625 35.2885C20.625 34.9442 20.3442 34.6635 20 34.6635ZM28.125 34.6635C27.7808 34.6635 27.5 34.9442 27.5 35.2885C27.5 35.6327 27.7808 35.9135 28.125 35.9135C28.4692 35.9135 28.75 35.6327 28.75 35.2885C28.75 34.9442 28.4692 34.6635 28.125 34.6635ZM20 37.1635C19.6558 37.1635 19.375 37.4442 19.375 37.7885C19.375 38.1327 19.6558 38.4135 20 38.4135C20.3442 38.4135 20.625 38.1327 20.625 37.7885C20.625 37.4442 20.3442 37.1635 20 37.1635Z"
+                                          fill="#333333"/>
+                                </svg>
+                            </div>
+                            <div class="installation__step-text">
+                                Mise en place <span>de la pompe à chaleur</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#hero" class="cta --amaranth anchor-link">Remplir Le Formulaire</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="testimonials__title section-title">"Plus <span>de 6000 clients</span> <span
+                        class="--amaranth">satisfaits</span>
+                    à travers toute la France"</h2>
+                <div class="testimonials__items">
+                    <div class="testimonials__item">
+                        <div class="testimonials__item-top">
+                            <div class="testimonials__item-photo">
+                                <img src="img/georges.png" alt="">
+                            </div>
+                            <div class="testimonials__item-name">
+                                Georges D.<br>
+                                <span>Morbihan</span>
+                            </div>
+                        </div>
+                        <div class="testimonials__item-bottom">
+                            "Super initiative! Après avoir eu l'approbation de mes droits, la prise de rendez-vous
+                            et l'installation se sont très bien passées et je remarque déjà les économies dans mes
+                            factures !"
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__item-top">
+                            <div class="testimonials__item-photo">
+                                <img src="img/frederique.png" alt="">
+                            </div>
+                            <div class="testimonials__item-name">
+                                Frédérique S.<br>
+                                <span>Nord</span>
+                            </div>
+                        </div>
+                        <div class="testimonials__item-bottom">
+                            "Très contente de ce système de chauffage. Comme promis, les démarches se sont déroulées
+                            sans aucun problème !"
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__item-top">
+                            <div class="testimonials__item-photo">
+                                <img src="img/mathilde.png" alt="">
+                            </div>
+                            <div class="testimonials__item-name">
+                                Mathilde E.<br>
+                                <span>Haute-Savoie</span>
+                            </div>
+                        </div>
+                        <div class="testimonials__item-bottom">
+                            "Le Coup de Pouce Chauffage par Expert Énergies est une offre à ne pas manquer! La pompe à
+                            chaleur fonctionne
+                            à merveille, surtout pendant les nuits
+                            les plus froides."
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__slider slider">
+                    <div class="testimonials__item">
+                        <div class="testimonials__item-top">
+                            <div class="testimonials__item-photo">
+                                <img src="img/georges.png" alt="">
+                            </div>
+                            <div class="testimonials__item-name">
+                                Georges D.<br>
+                                <span>Morbihan</span>
+                            </div>
+                        </div>
+                        <div class="testimonials__item-bottom">
+                            "Super initiative! Après avoir eu l'approbation de mes droits, la prise de rendez-vous
+                            et l'installation se sont très bien passées et je remarque déjà les économies dans mes
+                            factures !"
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__item-top">
+                            <div class="testimonials__item-photo">
+                                <img src="img/frederique.png" alt="">
+                            </div>
+                            <div class="testimonials__item-name">
+                                Frédérique S.<br>
+                                <span>Nord</span>
+                            </div>
+                        </div>
+                        <div class="testimonials__item-bottom">
+                            "Très contente de ce système de chauffage. Comme promis, les démarches se sont déroulées
+                            sans aucun problème !"
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__item-top">
+                            <div class="testimonials__item-photo">
+                                <img src="img/mathilde.png" alt="">
+                            </div>
+                            <div class="testimonials__item-name">
+                                Mathilde E.<br>
+                                <span>Haute-Savoie</span>
+                            </div>
+                        </div>
+                        <div class="testimonials__item-bottom">
+                            "Le Coup de Pouce Chauffage par Expert Énergies est une offre à ne pas manquer! La pompe à
+                            chaleur fonctionne
+                            à merveille, surtout pendant les nuits
+                            les plus froides."
+                        </div>
+                    </div>
+                </div>
+                <a href="#hero" class="cta --amaranth anchor-link">Calculer Mes Droits</a>
+            </div>
+        </section>
+        <section class="why">
+            <div class="container">
+                <div class="why__wrapper">
+                    <div class="why__left">
+                        <h2 class="why__title section-title">
+                            Pourquoi remplacer<br> sa chaudière <span>et mettre en place la pompe</span> à chaleur chez
+                            soi ?
+                        </h2>
+                    </div>
+                    <div class="why__right">
+                        <ul class="why__list">
+                            <li class="why__list-item">Économies d'énergie</li>
+                            <li class="why__list-item">Indépendance énergétique</li>
+                            <li class="why__list-item">Respect de l'environnement</li>
+                            <li class="why__list-item">Énergie propre et renouvelable</li>
+                        </ul>
+                        <a href="#hero" class="cta --amaranth anchor-link">Calculer Mes Droits</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="statistics">
+            <div class="container">
+                <div class="statistics__wrapper">
+                    <h2 class="statistics__title section-title">Statistiques <span>d'entreprise pour le temps</span>
+                        <span class="--amaranth">de travail</span></h2>
+                    <div class="statistics__items">
+                        <div class="statistics__item">
+                            <div class="statistics__item-number"><span class="counter-1">74</span>%</div>
+                            <div class="statistics__item-text">Jusqu’ 74% d’économies <span>sur vos factures</span> de
+                                chauffages
+                            </div>
+                        </div>
+                        <div class="statistics__item">
+                            <div class="statistics__item-number"><span class="counter-2">1427</span></div>
+                            <div class="statistics__item-text">Clients satisfaits <span>en 2022</span></div>
+                        </div>
+                        <div class="statistics__item">
+                            <div class="statistics__item-number"><span class="counter-3">90</span>%</div>
+                            <div class="statistics__item-text">Jusqu’à 90% d’aides <span>et subventions</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <div class="faq__wrapper">
+                    <div class="faq__heading">
+                        <h2 class="faq__title section-title">
+                            Ce que vous devez savoir sur le Pacte <span
+                                class="--amaranth">Énergie Solidarité 2022</span>
+                        </h2>
+                        <p class="faq__subtitle">
+                            Plus de 9 milliards d’euros pour soutenir les Français et les accompagner dans leur prise
+                            d’autonomie énergétique !
+                        </p>
+                    </div>
+                    <div class="faq__items">
+                        <div>
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <div class="faq__question-title">The Solidarity <span>Energy Pact (PES) 2022</span>
+                                    </div>
+                                </div>
+                                <div class="faq__answer">
+                                    <p>
+                                        <span>Emmanuel Macron and Élisabeth Borne,</span> Minister of Ecology,
+                                        confirmed the objectives of the Energy Transition Law: 100%
+                                        of energy production will be provided by renewable energies.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <div class="faq__question-title">Comment fonctionne <span>le Pacte Énergie
+                                    Solidarité ?</span></div>
+                                </div>
+                                <div class="faq__answer">
+                                    <p>
+                                        <span>Vous remplissez le formulaire d'éligibilité</span> et une fois votre
+                                        dossier
+                                        validé, nos
+                                        experts sélectionneront les meilleurs prestataires autour de chez vous pour
+                                        votre
+                                        projet. <span>Vous pourrez prendre ensuite rendez-vous</span> pour
+                                        l'installation et
+                                        la mise en place de votre
+                                        solution énergétique.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <div class="faq__question-title">Que permet
+                                        <span>le Pacte Énergie Solidarité ?</span></div>
+                                </div>
+                                <div class="faq__answer">
+                                    <p>
+                                        Il <span>permet de financer 90% de votre installation de Pompe à Chaleur.</span>
+                                        Vous pouvez dès
+                                        à présent en profiter faire ainsi
+                                        <span>jusqu’à 70 % d’économies d’énergies.</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faq__item">
+                                <div class="faq__question">
+                                    <div class="faq__question-title">Jusqu'à quand <span>le Pacte Énergie Solidarité est-il valide ?</span>
+                                    </div>
+                                </div>
+                                <div class="faq__answer">
+                                    <p>
+                                        Le PES 2021 est valable jusqu’au <span>31 décembre 2022</span> conformément au
+                                        renouvellement des
+                                        Certificats d’Économie d’Énergie par le Ministère de la Transition écologique et
+                                        solidaire.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="consultation">
+            <div class="container">
+                <div class="consultation__wrapper">
+                    <h2 class="consultation__title section-title"><span>Remplissez le formulaire</span> pour obtenir
+                        une
+                        consultation</h2>
+                    <a href="#hero" class="cta --black anchor-link">Calculer Mes Droits</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="img/footer-logo.png" alt="Footer logo" width="396" height="112">
+        </div>
+        <div class="footer__copyright">© 2022 - FRANCE HABITATION</div>
+    </footer>
+</div>
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
