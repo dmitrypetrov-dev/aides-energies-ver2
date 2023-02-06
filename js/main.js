@@ -5,7 +5,7 @@ $(document).ready(function () {
         let post_url = $(this).attr("action");
         let form_data = $(this).serialize();
         $.post(post_url, form_data, function() {
-            alert('Thanks you!');
+            alert('Thank you!');
         });
     });
 
